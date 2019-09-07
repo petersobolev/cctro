@@ -26,7 +26,8 @@ cartridgeEntry:
 
 
 ; draw checkerboard -----------------------------------------
-	clr	8			; 0-> r8. (r8 used to flip bit 0/1)
+	clr
+	lr	8,a			; 0-> r8. (r8 used to flip bit 0/1)
 
 	li	2			; shift (0|1)
 	lr	5, a
